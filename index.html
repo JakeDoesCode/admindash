@@ -1,0 +1,245 @@
+<!-- overall grid container 4 col
+sidebar fill one column, header 2 rows 2 columns, main content 3 columns 3 rows, right side 1 column 2 rows-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+    </style>
+  </head>
+  <body>
+    <!-- add 4 columns to grid-container -->
+    <div class="grid-container">
+      <!-- add 2 columns to sidebar 1st 1/3 the size of 2nd. 4 rows with bottom one blank make each subsection its own grid with rows for each div -->
+      <div class="sidebar">
+        <div class="logo">
+          <h1>
+            <img
+              src="blackflag.jpeg"
+              alt="An example icon"
+              style="width: 70px; height: 60px"
+            />
+            Helm
+          </h1>
+        </div>
+        <ul class="top" style="padding-left: 20px">
+          <span class="material-icons md-36">sailing</span>
+          <li class="sidebar-top">Main Deck</li>
+          <span class="material-icons md-36">map</span>
+          <li class="sidebar-top">Map</li>
+          <span class="material-icons md-36">inventory</span>
+          <li class="sidebar-top">Quartermaster</li>
+          <span class="material-icons md-36">menu_book</span>
+          <li class="sidebar-top">Captain's Log</li>
+          <span class="material-icons md-36">diamond</span>
+          <li class="sidebar-top">Treasure</li>
+          <span class="material-icons md-36">gavel</span>
+          <li class="sidebar-top">Code of Conduct</li>
+        </ul>
+        <ul class="bottom" style="padding-left: 20px">
+          <span class="material-icons md-36">anchor</span>
+          <li class="sidebar-bottom">Ship Settings</li>
+          <span class="material-icons md-36">chat</span>
+          <li class="sidebar-bottom">Scuttlebutt</li>
+          <span class="material-icons md-36">liquor</span>
+          <li class="sidebar-bottom">Rum</li>
+        </ul>
+      </div>
+      <!-- add content to top portion. header should be a grid spanning all 4 columns -->
+      <div class="header">
+        <div class="header-top">
+          <span class="material-icons" id="mag">search</span>
+          <input
+            type="search"
+            placeholder="Crow's Nest"
+            id="search"
+            name="search"
+          />
+          <span class="material-icons" id="notification"
+            >notifications_active</span
+          >
+          <div class="profilepic">
+            <img
+              src="pirateprofile.png"
+              alt="An example icon"
+              style="width: 50px; height: 50px"
+            />
+          </div>
+          <div class="name">Jake The Great</div>
+        </div>
+        <div class="header-bottom">
+          <div class="profile">
+            <img
+              src="pirateprofile.png"
+              alt="An example icon"
+              style="width: 90px; height: 90px"
+            />
+          </div>
+          <div class="text">
+            Ahoy,<br />
+            <h1>Pirate King (@JustJakeIt)</h1>
+          </div>
+          <div class="btngroup">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+      </div>
+      <!-- content will be a smaller grid containing 2 columns and 3 rows holding the a card in each cell-->
+      <div class="content">
+        <div id="title">Pirate Stuff</div>
+        <div class="cards">
+          <h1>Knots for dummies.</h1>
+          <p>
+            Simple knots for every occasion. From sail rigging to keelhauling.
+          </p>
+          <p class="cardicon">
+            <span class="material-icons">favorite</span
+            ><span class="material-icons">visibility</span
+            ><span class="material-icons">share</span>
+          </p>
+        </div>
+        <div class="cards">
+          <h1>My Parrot Dave.</h1>
+          <p>
+            He is better than your parrot. He wears sunglasses because he's
+            cool. Not like your parrot. Everyone hates your parrot.
+          </p>
+          <p class="cardicon">
+            <span class="material-icons">favorite</span
+            ><span class="material-icons">visibility</span
+            ><span class="material-icons">share</span>
+          </p>
+        </div>
+        <div class="cards">
+          <h1>Why is the rum gone?</h1>
+          <p>Seriously. You guys are jerks. <br />I had like half a cup.</p>
+          <p class="cardicon">
+            <span class="material-icons">favorite</span
+            ><span class="material-icons">visibility</span
+            ><span class="material-icons">share</span>
+          </p>
+        </div>
+        <div class="cards">
+          <h1>Diversity, and Inclusion Officer Needed!</h1>
+          <p>
+            We may commit violent atrocities on defenseless merchants, but we're
+            not savages. <br />
+            <br /><em>Apply now!</em>
+          </p>
+          <p class="cardicon">
+            <span class="material-icons">favorite</span
+            ><span class="material-icons">visibility</span
+            ><span class="material-icons">share</span>
+          </p>
+        </div>
+        <div class="cards">
+          <h1>Wenches love my blunderbuss.</h1>
+          <p>
+            10 tips to wow her on your next shore leave. She will pay you this
+            time!
+          </p>
+          <p class="cardicon">
+            <span class="material-icons">favorite</span
+            ><span class="material-icons">visibility</span
+            ><span class="material-icons">share</span>
+          </p>
+        </div>
+        <div class="cards">
+          <h1>The Tale of <br />Capt. Jack Sparrow</h1>
+          <p>Told first hand by the legendary Michael Bolton.</p>
+          <p class="cardicon">
+            <span class="material-icons">favorite</span
+            ><span class="material-icons">visibility</span
+            ><span class="material-icons">share</span>
+          </p>
+        </div>
+      </div>
+      <!-- right side will have a single column with 2 rows. with a "card" for each div -->
+      <div class="right-side">
+        <div class="announcementslbl">Announcements</div>
+        <div class="box" id="abox">
+          <div class="box1">
+            <h3>Ship Maintenance</h3>
+            <p>Ship needs a good careening....</p>
+          </div>
+          <div class="box2">
+            <h3>Share the spoils</h3>
+            <p>
+              Ah yes, the spoils of a good pillage. Make sure to take an
+              accurate inventory after each battle...
+            </p>
+          </div>
+          <div class="box3">
+            <h3>Morale Beatings</h3>
+            <p>
+              For our new members, please review our policy regarding morale
+              beatings...
+            </p>
+          </div>
+        </div>
+        <div class="trendinglbl">Trending</div>
+        <div class="box" id="tbox">
+          <div class="profile">
+            <img
+              class="person1img"
+              src="face4.jpeg"
+              alt="An example icon"
+              style="width: 80px; height: 80px"
+            />
+          </div>
+          <div class="personname">
+            Davy Jones
+            <p id="handle">@TheRealDavy</p>
+          </div>
+          <div class="profile">
+            <img
+              class="person1img"
+              src="davey.jpeg"
+              alt="An example icon"
+              style="width: 80px; height: 80px"
+            />
+          </div>
+          <div class="personname">
+            Red Beard
+            <p id="handle">@GingerPirate</p>
+          </div>
+          <div class="profile">
+            <img
+              class="person1img"
+              src="flag.jpeg"
+              alt="An example icon"
+              style="width: 80px; height: 80px"
+            />
+          </div>
+          <div class="personname">
+            Steve
+            <p id="handle">@JustAGuyNamedSteve</p>
+          </div>
+          <div class="profile">
+            <img
+              class="person1img"
+              src="prince.jpeg"
+              alt="An example icon"
+              style="width: 80px; height: 80px"
+            />
+          </div>
+          <div class="personname">
+            Harambe
+            <p id="handle">@SweetPrince513</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
